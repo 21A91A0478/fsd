@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table border="1" cellspacing="1">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		let a = document.getElementsByTagName('td');
+		// for (var i = 0; i < a.length; i++){
+		// 	a[i].innerText = a.length-i;
+		// }
+
+		k = a.length;
+		for (var i = 0; i < a.length; i++) {
+			a[i].innerText = k;
+			k--;
+		}
+		
+
+	</script>
+</body>
+</html>

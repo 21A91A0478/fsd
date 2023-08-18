@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table border="" cellspacing="1">
+		<tr>
+			<th>Course name</th>
+			<th>Course number</th>
+			<th>Course fees</th>
+			<th>place</th>
+		</tr>
+		<p id="demo"></p>
+	</table>
+
+
+	<script type="text/javascript">
+		var dt = [{
+			'cn' : 'html',
+			'cno' : '23423',
+			'cf' : '235',
+			'place' : 'dwp'
+		},
+		{
+			'cn' : 'css',
+			'cno' : '123445',
+			'cf' : '235',
+			'place' : 'dwp'
+		},
+		{
+			'cn' : 'js',
+			'cno' : '23423',
+			'cf' : '235',
+			'place' : 'dwp'
+		}]
+		for (var i = 0; i < dt.length; i++){
+			obj = dt[i];
+			t = "<tr>"
+			for (var key in obj){
+				// document.write(obj[key]+" ")
+				t += "<td>" + obj[key] + "</td>";
+			}
+			t += "</tr>"
+			document.getElementById('demo').innerHTML = t;
+		}
+	</script>
+</body>
+</html>

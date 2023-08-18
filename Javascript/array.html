@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var js = [{
+			'name' : 'abc',
+			'no' : '123',
+			'branch' : 'cse', 
+		},
+		{
+			'name' : 'def',
+			'no' : '456',
+			'branch' : 'ece',
+		},
+		{
+			'name' : 'ghi',
+			'no' : '789',
+			'branch' : 'it'
+		}]
+
+		for (var i = 0; i < js.length; i++)
+		{
+			// console.log(i, js[i].name, js[i].no, js[i].branch);
+			// document.write(i + " " + js[i].name + " " + js[i].no + " " + js[i].branch);
+			// document.write("<br>")
+			obj = js[i];
+			for (var key in obj){
+				document.write(obj[key]+" ");
+			}
+			document.write("<br>");
+		}
+	</script>
+</body>
+</html>

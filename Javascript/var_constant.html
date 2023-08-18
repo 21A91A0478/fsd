@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("Var is Global scope variable we can change the value by redeclaration <br>")
+		var a = 10;
+		var a = 20;
+		document.write(a+"<br>");
+
+
+
+
+		document.write("let is local scope varibale(use in particular block of code)/block level variable we cannot redeclare the values but we can reinitialize the values <br>")
+		let b = 10;
+		// let b = 20; //wrong --> redeclaration is not possible
+		b = 30;  //right --> reinitialized is possible
+		document.write(b+"<br>");
+
+
+
+		document.write("constants is block level variablewe cannot change the value by reinitialized or redeclaration <br>");
+		const pi = 3.14;
+		document.write(pi);
+
+	</script>
+</body>
+</html>

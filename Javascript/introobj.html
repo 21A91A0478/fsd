@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		//object = we have to use single quotes and comma(,)
+		var obj = {
+			'name' : 'hari',
+			'rollno' : '1234',
+			'college' : 'AEC',
+			'branch' : 'CSE',
+		}
+		console.log(obj.branch);
+		console.log(obj.rollno);
+		document.write(obj.name + "<br>");
+		document.write(obj['college']);
+		console.log(obj['name']);
+		document.write("</br>");
+
+
+
+		var trainees = [{
+			'name' : 'hari',
+			'rollno' : '1234',
+			'college' : 'AEC',
+			'branch' : 'CSE',
+		},
+		{
+			'name' : 'kiran',
+			'rollno' : '5467',
+			'college' : 'ACET',
+			'branch' : 'ECE',
+		}]
+		console.log(trainees);
+		document.write(trainees[0].name+" ");
+		document.write(trainees[0].rollno+" ");
+		document.write(trainees[0].college+" ");
+		document.write(trainees[0].branch+" ");
+		document.write("</br>");
+		document.write(trainees[1].name+" ");
+		document.write(trainees[1].rollno+" ");
+		document.write(trainees[1].college+" ");
+		document.write(trainees[1].branch+" ");
+
+
+
+
+
+		var js = [{
+			'name' : 'abc',
+			'no' : '123',
+			'branch' : 'cse', 
+		},
+		{
+			'name' : 'def',
+			'no' : '456',
+			'branch' : 'ece',
+		},
+		{
+			'name' : 'ghi',
+			'no' : '789',
+			'branch' : 'it'
+		}]
+
+		for (var i = 0; i < js.length; i++)
+		{
+			console.log(js[i].name, js[i].no, js[i].branch);
+		}
+
+
+
+
+		var js = [{
+			'name' : 'abc',
+			'no' : '123',
+			'branch' : 'cse', 
+		},
+		{
+			'name' : 'def',
+			'no' : '456',
+			'branch' : 'ece',
+		},
+		{
+			'name' : 'ghi',
+			'no' : '789',
+			'branch' : 'it'
+		}]
+
+		for (var i = 0; i < js.length; i++)
+		{
+			console.log(i, js[i].name, js[i].no, js[i].branch);
+			document.write(i + " " + js[i].name + " " + js[i].no + " " + js[i].branch);
+			document.write("<br>")
+		}
+
+	</script>
+</body>
+</html>
